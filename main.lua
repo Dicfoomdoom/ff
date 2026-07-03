@@ -11,7 +11,7 @@ ScreenGui.Parent = CoreGui
 
 local Theme = {
     BackgroundColor1 = Color3.fromRGB(15, 15, 15),
-    BackgroundColor2 = Color3.fromRGB(24, 24, 24),
+    BackgroundColor2 = Color3.fromRGB(18, 18, 18),
     AccentColor = Color3.fromRGB(20, 15, 85)
 }
 
@@ -49,7 +49,7 @@ function Settings:CreateWindow(Properties)
 
     local TopFrameForFrame2 = Object("Frame", {
         Parent = FrameBackground2,
-        Size = UDim2.new(1, 0, 0, 2),
+        Size = UDim2.new(1, 0, 0, 5),
         BackgroundColor3 = Theme.AccentColor,
         BorderSizePixel = 0
     })
