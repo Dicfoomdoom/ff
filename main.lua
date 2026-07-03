@@ -41,16 +41,16 @@ function Settings:CreateWindow(Properties)
 
     local FrameBackground2 = Object("Frame", {
         Parent = FrameBackground1,
-        Position = UDim2.fromOffset(4, 4),
-        Size = UDim2.new(1, -12, 1, -12),
+        Position = UDim2.fromOffset(2, 2),
+        Size = UDim2.new(1, -4, 1, -4),
         BackgroundColor3 = Theme.BackgroundColor2,
         BorderSizePixel = 0
     })
 
     local TopFrameForFrame2 = Object("Frame", {
         Parent = FrameBackground2,
-        Size = UDim2.new(1, 0, 0, 10),
-        BackgroundColor3 = Theme.AccentColor or Color3.fromRGB(45, 45, 45),
+        Size = UDim2.new(1, 0, 0, 2),
+        BackgroundColor3 = Theme.AccentColor,
         BorderSizePixel = 0
     })
 
