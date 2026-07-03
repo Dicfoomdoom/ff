@@ -51,8 +51,8 @@ function Settings:CreateWindow(Properties)
     local UiGradient1 = Object("UIGradient", {
         Parent = FrameBackground2,
         Color = ColorSequence.new({
-        ColorSequenceKeypoint.new(0, BackgroundColor2),
-        ColorSequenceKeypoint.new(1, BackgroundColor3)
+        ColorSequenceKeypoint.new(0, Theme.BackgroundColor2),
+        ColorSequenceKeypoint.new(1, Theme.BackgroundColor3)
         }),
         Rotation = 90
     })
