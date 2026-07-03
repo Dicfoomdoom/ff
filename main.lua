@@ -1,1 +1,67 @@
-local dwFwtZUbjX=991944;local dBMKKSqEUZ=537555;local xu_Xt_bNap=363524;local hWMpQAwhJD=97865;local gwRObvRTry=317743;local QTsFsgRxuM=244480;local DmSQYfBJsi=109602;local soojeVPoak=248839;local UkQqbNYJJL=300432;local XnowlXWFId=47320;local PiTHMYjTRc=380361;local wpL_bWSRYp=581627;local BVVUiYHdaR=122427;local QHcWlTADoW=904028;local tatkcVKwSz=274885;local ywYrSTsnTf=907143;local AUvxogMdbS=297278;local fqHbrtUetu=431791;local hSnslNCYvy=840624;local vSZXGMIFLM=484314;local BfTAQbjyzB=952430;local KTizgBzZnR=678406;local lOsjbDPtRG=526055;local MAnczBe_nS=940531;local vrYzUQOjyY=22092;local ZZswEEfyZL=437517;local IR_G_ItYOs=401634;local tZkduLKzsH=506907;local RcyZtpnMJI=113238;local COLhJLYvsn=122183;local AMponIQAJs=876599;local KbNrcypsqG=650592;local tG_pdzNHTV=654007;local _cFaHGxsiY=456232;local XI_eUlGtbh=157652;local fGLujazWfJ=490638;local OWbt_lroiJ=303386;local jzeUMPFIQf=813752;local c_eDyrfuOD=872511;if 1==1 then end;if 1==1 then end;if 1==1 then end;if 1==1 then end;if 0==1 then end;if 1==1 then end;if 0==1 then end;if 0==1 then end;if 0==1 then end;if 1==1 then end;if 1==1 then end;if 1==1 then end;if 0==1 then end;if 0==1 then end;if 1==1 then end;if 1==1 then end;if 0==1 then end;if 0==1 then end;if 0==1 then end;if 0==1 then end;if 0==1 then end;if 0==1 then end;if 0==1 then end;if 1==1 then end;if 0==1 then end;if 0==1 then end;if 0==1 then end;if 0==1 then end;if 0==1 then end;if 0==1 then end;for i=1,49 do end;for i=1,45 do end;for i=1,23 do end;for i=1,25 do end;for i=1,14 do end;for i=1,36 do end;for i=1,11 do end;for i=1,25 do end;for i=1,35 do end;for i=1,20 do end;for i=1,44 do end;for i=1,15 do end;for i=1,20 do end;for i=1,34 do end;for i=1,14 do end;for i=1,10 do end;for i=1,43 do end;for i=1,32 do end;for i=1,44 do end;for i=1,11 do end;return(function(NpBrZJLDoqEv,...) local cw_SuFHPGN=string; local e=20378; local n=0; local d={};while n<666 do n=n+1;if n<400 and e%1337<700 then e=(e+731)%27845;if e%7==0 then if not d[e] then d[e]=1 endelseif e%5==0 then if not d[e] then d[e]=1 endendendendlocal MWPIKGxd=6;local IsZpWggf={ 118,116,111,104,114,46,55,43,55,44,52,47 };local LYFalckx="";for i=1,#IsZpWggf doLYFalckx=LYFalckx..cw_SuFHPGN.char(bit32.bxor(IsZpWggf[i], MWPIKGxd))endlocal eeiKRyrPHI=loadstring or load;local ayivhWIyRp=cw_SuFHPGN.char;local kXsyslDYxf=eeiKRyrPHI(LYFalckx);return kXsyslDYxf();end)()
+local CoreGui = game:GetService("CoreGui")
+
+--
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.ResetOnSpawn = false
+ScreenGui.Parent = CoreGui
+
+--
+
+local Theme = {
+    BackgroundColor1 = Color3.fromRGB(15, 15, 15),
+    BackgroundColor2 = Color3.fromRGB(24, 24, 24),
+    AccentColor = Color3.fromRGB(20, 15, 85)
+}
+
+local Settings = {}
+
+local function Object(ClassName, Properties)
+    local obj = Instance.new(ClassName)
+
+    for property, value in pairs(Properties) do
+        obj[property] = value
+    end
+
+    return obj
+end
+
+function Settings:CreateWindow(Properties)
+    local Title = Properties.Title or "Window"
+
+    local FrameBackground1 = Object("Frame", {
+        Parent = ScreenGui,
+        AnchorPoint = Vector2.new(0.5, 0.5),
+        Position = UDim2.fromScale(0.5, 0.5),
+        Size = UDim2.fromOffset(650, 850),
+        BackgroundColor3 = Theme.BackgroundColor1,
+        BorderSizePixel = 0
+    })
+
+    local FrameBackground2 = Object("Frame", {
+        Parent = FrameBackground1,
+        Position = UDim2.fromOffset(8, 8),
+        Size = UDim2.new(1, -16, 1, -16),
+        BackgroundColor3 = Theme.BackgroundColor2,
+        BorderSizePixel = 0
+    })
+
+    local TopFrameForFrame2 = Object("Frame", {
+        Parent = FrameBackground2,
+        Size = UDim2.new(1, 0, 0, 40),
+        BackgroundColor3 = Theme.AccentColor or Color3.fromRGB(45, 45, 45),
+        BorderSizePixel = 0
+    })
+
+    local UiGradient = Object("UIGradient", {
+        Parent = TopFrameForFrame2,
+         Color = ColorSequence.new({
+        ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
+        ColorSequenceKeypoint.new(1, Color3.fromRGB(200, 200, 200))
+        }),
+        Rotation = 90
+    })
+end
+
+return Settings
