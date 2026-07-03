@@ -12,7 +12,7 @@ ScreenGui.Parent = CoreGui
 local Theme = {
     BackgroundColor1 = Color3.fromRGB(15, 15, 15),
     BackgroundColor2 = Color3.fromRGB(9, 9, 9),
-    BackgroundColor3 = Color3.fromRGB(14, 14, 14),
+    BackgroundColor3 = Color3.fromRGB(19, 19, 19),
     AccentColor = Color3.fromRGB(20, 15, 85)
 }
 
