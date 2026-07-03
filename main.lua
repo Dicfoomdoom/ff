@@ -11,7 +11,7 @@ ScreenGui.Parent = CoreGui
 
 local Theme = {
     BackgroundColor1 = Color3.fromRGB(15, 15, 15),
-    BackgroundColor2 = Color3.fromRGB(18, 18, 18),
+    BackgroundColor2 = Color3.fromRGB(9, 9, 9),
     AccentColor = Color3.fromRGB(20, 15, 85)
 }
 
@@ -49,14 +49,14 @@ function Settings:CreateWindow(Properties)
 
     local TopFrameForFrame2 = Object("Frame", {
         Parent = FrameBackground2,
-        Size = UDim2.new(1, 0, 0, 5),
+        Size = UDim2.new(1, 0, 0, 8),
         BackgroundColor3 = Theme.AccentColor,
         BorderSizePixel = 0
     })
 
     local UiGradient = Object("UIGradient", {
         Parent = TopFrameForFrame2,
-         Color = ColorSequence.new({
+        Color = ColorSequence.new({
         ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
         ColorSequenceKeypoint.new(1, Color3.fromRGB(200, 200, 200))
         }),
